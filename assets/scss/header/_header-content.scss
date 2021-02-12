@@ -1,0 +1,93 @@
+.header-content {
+  position: relative;
+
+  &__title {
+    @media (min-width: 992px) {
+      margin: 0 0 53px;
+    }
+
+    @media (max-width: 991.8px) and (min-width: 768px) {
+      margin: 0 0 43px;
+    }
+
+    @media (max-width: 767.8px) {
+      margin: 0 0 33px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 575.8px) {
+    align-items: center;
+    flex-direction: column;
+    }
+  }
+
+  &__container {
+    max-width: $ul;
+    margin: 0 auto;
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+
+  &__actions .btn {
+
+    @media (min-width: 992px) {
+      min-width: 250px;
+    }
+
+    @media (max-width: 991.8px) and (min-width: 768px) {
+      min-width: 200px;
+      height: 50px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      letter-spacing: 0.1em;
+      font-size: 1rem;
+    }
+    
+    @media (max-width: 767.8px) and (min-width: 576px) {
+      min-width: 170px;
+      height: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      letter-spacing: 0.05em;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 575.8px) {
+      min-width: 170px;
+      height: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      letter-spacing: 0.05em;
+      font-size: 1rem;
+    }
+
+
+    &:not(:last-of-type) {
+
+      @media (min-width: 992px) {
+        margin-right: 20px;
+    }
+
+      @media (max-width: 991.8px) and (min-width: 768px) {
+        margin-right: 20px;
+    }
+
+      @media (max-width: 767.8px) and (min-width: 576px) {
+        margin-right: 20px;
+    }
+
+      @media (max-width: 575.8px) {
+        margin-bottom: 20px;
+    }
+
+    }
+
+  }
+
+}
+
