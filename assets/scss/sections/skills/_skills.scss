@@ -54,5 +54,11 @@
       display: flex;
       justify-content: center;
       }
+
+      .btn--accent {
+      @media (min-width: 576px) {
+      min-width: 350px;
+}
+}
     }
 }

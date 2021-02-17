@@ -40,6 +40,17 @@
     border-bottom-color: $color-light;
     background-color: rgba($color-light, 0.15);
   }
+
+  &::placeholder {
+    color: $color-gray;
+  }
+}
+
+.form-item:nth-of-type(1) {
+
+  @media (max-width: 767.8px) and (min-width: 576px) {
+    grid-column: 1 / span 2;
+}
 }
 
 .form .btn--accent {

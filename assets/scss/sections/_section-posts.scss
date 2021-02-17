@@ -5,6 +5,12 @@
     display: flex;
     justify-content: center;
     }
+
+    .btn--accent {
+      @media (min-width: 576px) {
+        min-width: 350px;
+    }
+    }
   }
 
   &__grid {
@@ -22,7 +28,7 @@
 }
 
     @media (max-width: 767.8px) and (min-width: 576px) {
-      grid-template-columns: 2, 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
 }
 
@@ -56,7 +62,7 @@
 .post-item {
   background-color: #f2f2f2;
   transition: background-color 0.5s;
-    
+  
 
   &__link {
     height: 100%;
@@ -74,19 +80,15 @@
     transition: transform 0.5s;
 }
 
-  &:hover 
-  .post-item__image {
+  &:hover {
+    background-color: #d8d8d8;
+    min-height: 300px;
+
+  .post-item__image img {
     position: relative;
-      overflow: hidden;
-      transform: scale(1.1);
+    overflow: hidden;
+    transform: scale(1.1);
     }
-
-    &:hover {
-      background-color: #d8d8d8;
-  }
-
-  &:focus {
-    outline: auto 1px;
   }
 
   &__text {
@@ -105,13 +107,15 @@
       text-align: center;
     }
 }
-
 }
+
+
 
 .post-item__image img {
   width: 100%;
   transition: transform 0.5s;
   object-fit: cover;
+  min-height: 300px;
 }
 
 @for $i from 1 through 6 {

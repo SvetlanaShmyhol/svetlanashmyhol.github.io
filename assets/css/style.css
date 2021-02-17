@@ -538,7 +538,6 @@ h3 {
   transition: background-color 0.5s;
   background-color: rgba(45, 54, 81, 0.8);
   border: 2px solid #2d3651;
-  min-width: 350px;
 }
 
 .btn--accent:focus, .btn--accent:hover {
@@ -937,6 +936,26 @@ input:focus {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+.form-item__input::-webkit-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::-moz-placeholder {
+  color: #637588;
+}
+
+.form-item__input:-ms-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::-ms-input-placeholder {
+  color: #637588;
+}
+
+.form-item__input::placeholder {
+  color: #637588;
+}
+
 .form .btn--accent {
   width: 100%;
   color: #ffffff;
@@ -993,20 +1012,17 @@ input:focus {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.post-item:hover .post-item__image {
+.post-item:hover {
+  background-color: #d8d8d8;
+  min-height: 300px;
+}
+
+.post-item:hover .post-item__image img {
   position: relative;
   overflow: hidden;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.post-item:hover {
-  background-color: #d8d8d8;
-}
-
-.post-item:focus {
-  outline: auto 1px;
 }
 
 .post-item__text {
@@ -1040,6 +1056,7 @@ input:focus {
   transition: transform 0.5s, -webkit-transform 0.5s;
   -o-object-fit: cover;
      object-fit: cover;
+  min-height: 300px;
 }
 
 .post-item:nth-of-type(1) {
@@ -1143,6 +1160,9 @@ input:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .skills__action .btn--accent {
+    min-width: 350px;
+  }
   .posts__actions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1150,6 +1170,9 @@ input:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .posts__actions .btn--accent {
+    min-width: 350px;
   }
 }
 
@@ -1340,8 +1363,11 @@ input:focus {
   .form__container {
     grid-template-columns: 1fr 1fr;
   }
+  .form-item:nth-of-type(1) {
+    grid-column: 1 / span 2;
+  }
   .posts__grid {
-    grid-template-columns: 2, 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
   }
 }

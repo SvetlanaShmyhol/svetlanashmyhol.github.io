@@ -103,14 +103,12 @@ font-size: 1.125rem;
   transition: background-color 0.5s;
   background-color: rgba($color-primary,0.8);
   border: 2px solid $color-primary;
-  min-width: 350px;
 
   &:focus,
   &:hover {
   background-color: $color-accent;
 }
 }
-
 
 .about__container, 
 .form__container, 
