@@ -285,7 +285,7 @@ html, body {
     left: 0;
 }
 
-.responsibilities {
+.responsibilities, .project_description {
     font-weight: 300;
     font-size: 14px;
     line-height: 154%;
