@@ -107,8 +107,6 @@ html, body {
 }
 
 .hero-link {
-    display: flex;
-    flex-direction: column;
     padding-bottom: 20px;
     font-weight: 300;
     font-size: 14px;
@@ -118,18 +116,22 @@ html, body {
     color: var(--text-gray);
 }
 
-.hero-link-top, .hero-link-bottom {
+.hero-link-bottom {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
 .hero-link-top {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
     padding-bottom: 16px;
 }
 
 .hero-link-blue {
-    border-left: 3px solid var(--royalblue);
     padding-right: 6px;
     padding-left: 6px;
     color: var(--royalblue);
@@ -140,18 +142,54 @@ html, body {
 }
 
 .btn {
+    display: flex;
+    width: 150px;
+    justify-content: center;
     background-color: var(--blackpure);
     border: 1px solid #355deb;
     border-radius: 4px;
     color: var(--white);
     text-align: center;
-    padding: 10px 30px;
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    margin-top: 40px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 30px;
 }
 
 .btn:hover {
+    outline: none;
     box-shadow: 4px 4px 0 0 var(--royalblue);
     transform: translate(-5px, -5px);
+}
+
+.skills {
+    padding-bottom: 60px;
+}
+
+.skills-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--text-gray);
+    padding: 8px 20px;
+    background-color: #152755;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.skills-item:hover {
+    background-color: #172f6b;
+    color: var(--white);
 }
 
 /* Main content */
