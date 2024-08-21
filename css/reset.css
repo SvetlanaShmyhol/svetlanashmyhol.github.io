@@ -49,6 +49,12 @@ address {
     font-style: normal;
 }
 
+@page
+{
+    size: Letter portrait;
+    margin: 0;
+}
+
 /* Form */
 
 input, textarea, button, select {
