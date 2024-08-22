@@ -237,6 +237,11 @@ html, body {
     transition: all 0.2s cubic-bezier(0.645,0.045,0.355,1);
 }
 
+.careers-tech {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
 .projects-box {
     gap: 1.5rem;
 }
